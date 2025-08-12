@@ -4,16 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AI Agent Test</title>
-  <style>html,body{height:100%;margin:0}</style>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 25vh; /* 25% of the viewport height */
+      min-height: 200px;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <div style="padding:8px;font:14px/1.4 sans-serif;color:#444">
-    If you can read this, the page is loading. If the chat doesn’t appear below, the iframe is being blocked.
-  </div>
   <iframe
     src="https://udify.app/chatbot/e1JMVyly0pFQKUqo"
-    style="width: 30%; height: 30%; min-height: 700px;"
-    frameborder="0"
     allow="microphone">
   </iframe>
 </body>
