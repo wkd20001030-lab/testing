@@ -13,18 +13,40 @@
       align-items: center;
       padding: 20px;
     }
-    iframe {
-      width: 100%;
-      height: 25vh; /* 25% of the viewport height */
-      min-height: 200px;
-      border: none;
-    }
   </style>
 </head>
 <body>
-  <iframe
-    src="https://udify.app/chatbot/e1JMVyly0pFQKUqo"
-    allow="microphone">
-  </iframe>
+  <h1>AI Agent Test</h1>
+
+  <script>
+    window.difyChatbotConfig = {
+      token: 'e1JMVyly0pFQKUqo',
+      inputs: {
+        // Define Start node inputs here if needed
+      },
+      systemVariables: {
+        // user_id: 'YOUR_USER_ID',
+        // conversation_id: 'VALID_UUID',
+      },
+      userVariables: {
+        // avatar_url: 'USER_AVATAR_URL',
+        // name: 'USER_NAME',
+      },
+    }
+  </script>
+  <script
+    src="https://udify.app/embed.min.js"
+    id="e1JMVyly0pFQKUqo"
+    defer>
+  </script>
+  <style>
+    #dify-chatbot-bubble-button {
+      background-color: #1C64F2 !important;
+    }
+    #dify-chatbot-bubble-window {
+      width: 24rem !important;
+      height: 40rem !important;
+    }
+  </style>
 </body>
 </html>
